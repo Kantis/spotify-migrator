@@ -1,19 +1,18 @@
-This is a Kotlin Multiplatform project targeting Web, Desktop.
+## Scope
+I want to try out Apple Music, and want to bring my music catalogue with me. 
+I also want to try out [Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/) a bit.
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+## Current state
+- [x] Spotify OAuth Flow
+- [x] Fetching user's followed artists from Spotify
+- [ ] Building a UI to display the followed artists
+- [ ] Integration with Apple Music
+- [ ] Matching artists between Spotify and Apple Music
+- [ ] Building a UI to display the artists
+  - [ ] Artists with no match clearly highlighted
+  - [ ] Options to filter matched artists before migrating
+- [ ] Adding the matched artists to Apple Music
 
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
-
-**Note:** Compose/Web is Experimental and may be changed at any time. Use it only for evaluation purposes.
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
-
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+## References
+- [Spotify API](https://developer.spotify.com/documentation/web-api/)
+- [Apple Music API](https://developer.apple.com/documentation/applemusicapi)
